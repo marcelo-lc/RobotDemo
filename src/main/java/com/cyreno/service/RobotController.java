@@ -19,7 +19,7 @@ public class RobotController {
         Surface surface = new Surface(5, 5);
         Robot robot = new Robot(0, 0, Direction.NORTH, surface);
 
-        new RobotCommandExecutor(robot).executeCommands(commands);
+        new CommandExecutor(robot).executeCommands(commands);
 
         return RobotResponseFormatter.getResponseAsText(robot);
 

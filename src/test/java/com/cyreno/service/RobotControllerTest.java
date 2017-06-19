@@ -34,7 +34,7 @@ public class RobotControllerTest {
 
     @Before
     public void setUp() {
-        RobotCommandExecutor.setDebug(true);
+        CommandExecutor.setDebug(true);
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
     }
 
